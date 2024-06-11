@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024061E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240611E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"PE11"</constant>
@@ -360,7 +360,7 @@
         <constant name="disableEtbWhenEngineStopped">"false"</constant>
         <constant name="is_enabled_spi_4">"false"</constant>
         <constant name="pauseEtbControl">"false"</constant>
-        <constant name="unusedAlign">"false"</constant>
+        <constant name="tpsTpsPercentMode">"ms adder"</constant>
         <constant name="verboseKLine">"false"</constant>
         <constant name="idleIncrementalPidCic">"false"</constant>
         <constant name="enableAemXSeries">"false"</constant>
@@ -1326,7 +1326,7 @@
         <constant digits="0" name="etbJamIntegratorLimit" units="%">0.0</constant>
         <constant digits="0" name="hpfpCamLobes" units="lobes/cam">3.0</constant>
         <constant name="hpfpCam">"NONE"</constant>
-        <constant digits="0" name="unusedByteHere" units="">0.0</constant>
+        <constant digits="0" name="acLowRpmLimit" units="RPM">500.0</constant>
         <constant digits="0" name="hpfpMinAngle" units="deg">10.0</constant>
         <constant digits="3" name="hpfpPumpVolume" units="cc">0.29</constant>
         <constant digits="0" name="hpfpActivationAngle" units="deg">30.0</constant>
@@ -4721,7 +4721,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240607" nPages="1" signature="rusEFI main.2024.06.10.XYZ.2051356106" version="5.0"/>
+    <versionInfo firmwareInfo="20240607" nPages="1" signature="rusEFI main.2024.06.11.XYZ.1442678060" version="5.0"/>
     <bibliography author="rusEFI 20240607" writeDate="date"/>
     <settings/>
     <userComments/>
