@@ -4720,7 +4720,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240708" nPages="1" signature="rusEFI main.2024.07.15.Cat-GDI.2344140517" version="5.0"/>
+    <versionInfo firmwareInfo="20240708" nPages="1" signature="rusEFI main.2024.07.15.Cat-GDI.2234972443" version="5.0"/>
     <bibliography author="rusEFI 20240708" writeDate="date"/>
     <settings/>
     <userComments/>
