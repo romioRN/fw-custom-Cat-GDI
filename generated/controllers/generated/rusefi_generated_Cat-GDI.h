@@ -1184,8 +1184,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",11="Highside 1",10="Highside 2",65="Highside 3",64="Highside 4",54="Ign 1",102="Ign 10",101="Ign 11",100="Ign 12",53="Ign 2",43="Ign 3",42="Ign 4",41="Ign 5",106="Ign 6",105="Ign 7",104="Ign 8",103="Ign 9",57="Lowside 1",24="Lowside 10",25="Lowside 11",26="Lowside 12",27="Lowside 13",66="Lowside 14",67="Lowside 15",68="Lowside 16",107="Lowside 2",108="Lowside 3",109="Lowside 4",110="Lowside 5",111="Lowside 6",112="Lowside 7",22="Lowside 8",23="Lowside 9",60="STM32 PD10",61="STM32 PD11",62="STM32 PD12",63="STM32 PD13",58="STM32 PD8",59="STM32 PD9"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Highside 2","Highside 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Lowside 8","Lowside 9","Lowside 10","Lowside 11","Lowside 12","Lowside 13","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ign 5","Ign 4","Ign 3","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ign 2","Ign 1","INVALID","INVALID","Lowside 1","STM32 PD8","STM32 PD9","STM32 PD10","STM32 PD11","STM32 PD12","STM32 PD13","Highside 4","Highside 3","Lowside 14","Lowside 15","Lowside 16","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ign 12","Ign 11","Ign 10","Ign 9","Ign 8","Ign 7","Ign 6","Lowside 2","Lowside 3","Lowside 4","Lowside 5","Lowside 6","Lowside 7"
+#define output_pin_e_enum 0="NONE",11="Highside 1",10="Highside 2",65="Highside 3",64="Highside 4",54="Ign 1",102="Ign 10",101="Ign 11",100="Ign 12",53="Ign 2",43="Ign 3",42="Ign 4",41="Ign 5",106="Ign 6",105="Ign 7",104="Ign 8",103="Ign 9",24="Lowside 10",25="Lowside 11",26="Lowside 12",27="Lowside 13",66="Lowside 14",67="Lowside 15",68="Lowside 16",23="Lowside 9",60="STM32 PD10",61="STM32 PD11",62="STM32 PD12",63="STM32 PD13",58="STM32 PD8",59="STM32 PD9",110="ingect 5",111="ingect 6",112="ingect 7",22="ingect 8",57="ingect H 1",107="ingect H 2",108="ingect H 3",109="ingect H 4"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Highside 2","Highside 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","ingect 8","Lowside 9","Lowside 10","Lowside 11","Lowside 12","Lowside 13","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ign 5","Ign 4","Ign 3","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ign 2","Ign 1","INVALID","INVALID","ingect H 1","STM32 PD8","STM32 PD9","STM32 PD10","STM32 PD11","STM32 PD12","STM32 PD13","Highside 4","Highside 3","Lowside 14","Lowside 15","Lowside 16","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Ign 12","Ign 11","Ign 10","Ign 9","Ign 8","Ign 7","Ign 6","ingect H 2","ingect H 3","ingect H 4","ingect 5","ingect 6","ingect 7"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1288,7 +1288,7 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets false
 #define show_test_presets false
-#define SIGNATURE_HASH 159062280
+#define SIGNATURE_HASH 630105297
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1699,7 +1699,7 @@
 #define ts_show_vvt_output true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.07.15.Cat-GDI.159062280"
+#define TS_SIGNATURE "rusEFI main.2024.07.15.Cat-GDI.630105297"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
