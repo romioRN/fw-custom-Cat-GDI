@@ -12,10 +12,10 @@
 
 #define Cat-GDI_DEFAULT_AT_PULLUP 2700
 
-#define LS_1 D7
+#define Cat_ingect_H_1 D7
 #define Cat_ingect_H_2 G9
 #define Cat_ingect_H_3 G10
-#defineCat_ingect_H_4 G11
+#define Cat_ingect_H_4 G11
 #define Cat_ingect_5 G12
 #define Cat_ingect_6 G13
 #define Cat_ingect_7 G14
