@@ -14,6 +14,46 @@ Gpio getRunningLedPin() {
 Gpio getWarningLedPin() {
 	return Gpio::E6;
 }
+
+static const brain_pin_e injPins[] = {
+    Gpio::PROTEUS_LS_1,
+	Gpio::PROTEUS_LS_2,
+	Gpio::PROTEUS_LS_3,
+	Gpio::PROTEUS_LS_4,
+	Gpio::PROTEUS_LS_5,
+	Gpio::PROTEUS_LS_6,
+	Gpio::PROTEUS_LS_7,
+	Gpio::PROTEUS_LS_8,
+	Gpio::PROTEUS_LS_9,
+	Gpio::PROTEUS_LS_10,
+	Gpio::PROTEUS_LS_11,
+	Gpio::PROTEUS_LS_12
+};
+
+static const brain_pin_e ignPins[] = {
+	Gpio::PROTEUS_IGN_1,
+	Gpio::PROTEUS_IGN_2,
+	Gpio::PROTEUS_IGN_3,
+	Gpio::PROTEUS_IGN_4,
+	Gpio::PROTEUS_IGN_5,
+	Gpio::PROTEUS_IGN_6,
+	Gpio::PROTEUS_IGN_7,
+	Gpio::PROTEUS_IGN_8,
+	Gpio::PROTEUS_IGN_9,
+	Gpio::PROTEUS_IGN_10,
+	Gpio::PROTEUS_IGN_11,
+	Gpio::PROTEUS_IGN_12,
+};
+
+static void setInjectorPins() {
+	copyArray(engineConfiguration->injectionPins, injPins);
+}
+
+static void setIgnitionPins() {
+	copyArray(engineConfiguration->ignitionPins, ignPins);
+}
+
+
 // board-specific configuration setup
 void setBoardDefaultConfiguration() {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
