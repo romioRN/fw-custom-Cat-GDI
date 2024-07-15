@@ -78,10 +78,25 @@ Gpio getWarningLedPin() {
 	return Gpio::E6;
 }
 
+static void setupSdCard() {
+	engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
+	engineConfiguration->sdCardCsPin = Gpio::D2;
+
+	engineConfiguration->is_enabled_spi_3 = true;
+	engineConfiguration->spi3sckPin = Gpio::C10;
+	engineConfiguration->spi3misoPin = Gpio::C11;
+	engineConfiguration->spi3mosiPin = Gpio::C12;
+
+	engineConfiguration->is_enabled_spi_5 = true;
+	engineConfiguration->spi5sckPin = Gpio::F7;
+	engineConfiguration->spi5misoPin = Gpio::F8;
+	engineConfiguration->spi5mosiPin = Gpio::F9;
+}
+
 void setBoardConfigOverrides() {
 	setupVbatt();
 	setEtbConfig();
-	
+	setupSdCard();
 
 	//engineConfiguration->clt.config.bias_resistor = 2490;
 	//engineConfiguration->iat.config.bias_resistor = 2490;
@@ -93,6 +108,9 @@ void setBoardConfigOverrides() {
 	//CAN 2 bus overwrites
 	engineConfiguration->can2RxPin = Gpio::B12;
 	engineConfiguration->can2TxPin = Gpio::B13;
+
+	engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 void setBoardDefaultConfiguration(void) {
