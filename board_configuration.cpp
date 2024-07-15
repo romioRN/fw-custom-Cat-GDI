@@ -15,37 +15,33 @@ Gpio getWarningLedPin() {
 	return Gpio::E6;
 }
 
-static const brain_pin_e injPins[] = {
-        Gpio::Cat_ingect_H_1,
-	Gpio::Cat_ingect_H_2,
-	Gpio::Cat_ingect_H_3,
-	Gpio::Cat_ingect_H_4,
-	Gpio::Cat_ingect_5,
-	Gpio::Cat_ingect_6,
-	Gpio::Cat_ingect_7,
-	Gpio::Cat_ingect_8,
-	
-};
-
-static const brain_pin_e ignPins[] = {
-	Gpio::Cat_IGN_1,
-	Gpio::Cat_IGN_2,
-	Gpio::Cat_IGN_3,
-	Gpio::Cat_IGN_4,
-	Gpio::Cat_IGN_5,
-	Gpio::Cat_IGN_6,
-	Gpio::Cat_IGN_7,
-	Gpio::Cat_IGN_8,
-	
-};
-
 static void setInjectorPins() {
-	copyArray(engineConfiguration->injectionPins, injPins);
+	engineConfiguration->injectionPins[0] = Gpio::Cat_ingect_H_1;
+	engineConfiguration->injectionPins[1] = Gpio::Cat_ingect_H_2;
+	engineConfiguration->injectionPins[2] = Gpio::Cat_ingect_H_3;
+	engineConfiguration->injectionPins[3] = Gpio::Cat_ingect_H_3;
+	engineConfiguration->injectionPins[4] = Gpio::Cat_ingect_5;
+	engineConfiguration->injectionPins[5] = Gpio::Cat_ingect_6;
+	engineConfiguration->injectionPins[6] = Gpio::Cat_ingect_7;
+	engineConfiguration->injectionPins[7] = Gpio::Cat_ingect_8;
 }
 
 static void setIgnitionPins() {
-	copyArray(engineConfiguration->ignitionPins, ignPins);
+	engineConfiguration->ignitionPins[0] = Gpio::Cat_IGN_1;
+	engineConfiguration->ignitionPins[1] = Gpio::Cat_IGN_2;
+	engineConfiguration->ignitionPins[2] = Gpio::Cat_IGN_3;
+	engineConfiguration->ignitionPins[3] = Gpio::Cat_IGN_4;
+	engineConfiguration->ignitionPins[4] = Gpio::Cat_IGN_5;
+	engineConfiguration->ignitionPins[5] = Gpio::Cat_IGN_6;
+	engineConfiguration->ignitionPins[6] = Gpio::Cat_IGN_7;
+	engineConfiguration->ignitionPins[7] = Gpio::Cat_IGN_8;
 }
+
+
+
+
+
+
 
 
 // board-specific configuration setup
