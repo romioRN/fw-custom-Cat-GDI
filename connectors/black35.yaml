@@ -110,12 +110,7 @@ pins:
     color: white
 
   - pin: 16
-*    id: G11
-    function: "Injector #4"
-    class: outputs
-    ts_name: ingect H 4
-    type: ls
-    color: orange/brown
+
 
   - pin: 17
     function: Power GND
