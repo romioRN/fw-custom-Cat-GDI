@@ -46,7 +46,11 @@ pins:
     type: gnd
 
   - pin: 8
-
+    id: B6
+    function: "Injector #9"
+    class: outputs
+    ts_name: out_pump2_H
+    type: ls
 
   - pin: 9
     function: CAN-H
