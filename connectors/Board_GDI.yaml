@@ -30,10 +30,10 @@ pins:
   
 info:
   title: Cat-GDI
-  name: Black23
+  name: Board_GDI
   board_url: "https://github.com/romioRN/fw-custom-Cat-GDI/wiki"
   directory: Cat-GDI
-  cid: black23
+  cid: Board_GDI
   image:
     file: black23.jpg
   pins:
