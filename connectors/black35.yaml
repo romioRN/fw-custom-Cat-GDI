@@ -1,9 +1,11 @@
 pins:
   - pin: 1
-   
+    function: Power GND
+    type: gnd  
 
   - pin: 2
-    
+    function: Power GND
+    type: gnd
 
   - pin: 3
     
