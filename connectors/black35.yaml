@@ -22,139 +22,133 @@ pins:
     type: hs
 
   - pin: 5
-   
+    id: C7
+    function: Ignition cylinder 5
+    class: outputs
+    ts_name: Ign 5
+    type: high_logic
 
   - pin: 6
-
-  - pin: 7
+    function: Power 12V_MR
+    type: 12V_MR
     
+  - pin: 7
+    id: G7
+    function: Ignition cylinder 7
+    class: outputs
+    ts_name: Ign 7
+    type: high_logic
 
   - pin: 8
-    
+    id: G6
+    function: Ignition cylinder 8
+    class: outputs
+    ts_name: Ign 8
+    type: high_logic
 
   - pin: 9
-*    id: B7
-    function: "Injector #11 or radiator fan relay"
+    id: D4
+    function: Ignition cylinder 1
     class: outputs
-    ts_name: out_pump_L1
-    type: ls
+    ts_name: Ign 1
+    type: high_logic
+    color: green
 
   - pin: 10
-    
+    id: D3
+    function: Ignition cylinder 2
+    class: outputs
+    ts_name: Ign 2
+    type: high_logic
+    color: white
 
   - pin: 11
-    
-  - pin: 12
-   
-
-  - pin: 13
-
-    id: E0
-    function: Lowside output
-    class: outputs
-    ts_name: Lowside 14
-    type: ls
-  
-&    id: D15
-    function: output
-    class: outputs
-    ts_name: Highside 3
-    type: hs
-
-  - pin: 14
-
-    id: E1
-    class: outputs
-    ts_name: Lowside 15
-    type: ls
-  
-    - pin: 15
-
-    id: B9
-    class: outputs
-    ts_name: Lowside 13
-    type: ls
-  
-&    id: G9
-    function: "Injector #2"
-    class: outputs
-    ts_name: ingect H 2
-    type: ls
-    color: white
-
-  - pin: 16
-
-
-  - pin: 17
-    function: Power GND
-    type: gnd
-
-  - pin: 18
-
-    id: G12
-    function: "Injector #5"
-    class: outputs
-    ts_name: ingect 5
-    type: ls
-  
-&    function: Power GND
-    type: gnd
-
-  - pin: 19
-
-    id: G13
-    function: "Injector #6"
-    class: outputs
-    ts_name: ingect 6
-    type: ls
-  
-&    id: B4
-    function: "Injector #8"
-    class: outputs
-    ts_name: ingect 8
-    type: ls
-
-  - pin: 20
-
-    id: G14
-    function: "Injector #7"
-    class: outputs
-    ts_name: ingect 7
-    type: ls
-  
-&    id: B6
-    function: "Injector #10 or Fuel Pump relay"
-    class: outputs
-    ts_name: Lowside 10
-    type: ls
-    color: white
-
-  - pin: 21
-*    id: B8
-    function: "Injector #12 or Main relay"
-    class: outputs
-    ts_name: out_pump_L2
-    type: ls
-    color: grey
-
-  - pin: 22
     id: C9
     function: Ignition cylinder 3
     class: outputs
     ts_name: Ign 3
     type: high_logic
     color: blue
+    
+  - pin: 12
+    id: C8
+    function: Ignition cylinder 4
+    class: outputs
+    ts_name: Ign 4
+    type: high_logic
+    color: orange/brown
 
+  - pin: 13
+    id: E0
+    function: Lowside output
+    class: outputs
+    ts_name: Lowside 14
+    type: ls
 
-  - pin: 23
+  - pin: 14
+    id: E1
+    class: outputs
+    ts_name: Lowside 15
+    type: ls
+  
+  - pin: 15
+    id: B9
+    class: outputs
+    ts_name: Lowside 13
+    type: ls
+  
+  - pin: 16
     id: E2
     class: outputs
     ts_name: Lowside 16
     type: ls
 
-  - pin: 24
+  - pin: 17
     function: Power GND
     type: gnd
+
+  - pin: 18
+    id: G12
+    function: "Injector #5"
+    class: outputs
+    ts_name: ingect 5
+    type: ls
+  
+  - pin: 19
+    id: G13
+    function: "Injector #6"
+    class: outputs
+    ts_name: ingect 6
+    type: ls
+  
+  - pin: 20
+    id: G14
+    function: "Injector #7"
+    class: outputs
+    ts_name: ingect 7
+    type: ls
+  
+  - pin: 21
+    id: B4
+    function: "Injector #8"
+    class: outputs
+    ts_name: ingect 8
+    type: ls
+
+  - pin: 22
+    function: ETB 1 negative
+    type: etb
+    color: white
+
+  - pin: 23
+    function: ETB 1 positive
+    type: etb
+    color: blue
+
+  - pin: 24
+    function: OUT_INJ1_N
+    type: Ingector
+    color: white
 
   - pin: 25
     id: G2
@@ -185,18 +179,10 @@ pins:
     type: high_logic
 
   - pin: 29
-    id: G6
-    function: Ignition cylinder 8
-    class: outputs
-    ts_name: Ign 8
-    type: high_logic
+    
 
   - pin: 30
-    id: G7
-    function: Ignition cylinder 7
-    class: outputs
-    ts_name: Ign 7
-    type: high_logic
+    
 
   - pin: 31
     id: G8
@@ -206,35 +192,16 @@ pins:
     type: high_logic
 
   - pin: 32
-    id: C7
-    function: Ignition cylinder 5
-    class: outputs
-    ts_name: Ign 5
-    type: high_logic
+    
 
   - pin: 33
-    id: C8
-    function: Ignition cylinder 4
-    class: outputs
-    ts_name: Ign 4
-    type: high_logic
-    color: orange/brown
+   
 
   - pin: 34
-    id: D3
-    function: Ignition cylinder 2
-    class: outputs
-    ts_name: Ign 2
-    type: high_logic
-    color: white
+    
 
   - pin: 35
-    id: D4
-    function: Ignition cylinder 1
-    class: outputs
-    ts_name: Ign 1
-    type: high_logic
-    color: green
+    
 
 info:
   title: Proteus
