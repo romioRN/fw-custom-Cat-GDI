@@ -8,27 +8,15 @@ pins:
     type: gnd
 
   - pin: 3
-    
     id: A9
     function: output
     class: outputs
     ts_name: Highside 1
     type: hs
     
-&    id: D7
-    function: "Injector #1"
-    class: outputs
-    ts_name: ingect H 1
-    type: ls
-    color: green
-
-*  - pin: 4
-    id: G10
-    function: "Injector #3"
-    class: outputs
-    ts_name: ingect H 3
-    type: ls
-    color: blue
+   
+  - pin: 4
+    
 
   - pin: 5
 &    id: G12
@@ -51,12 +39,8 @@ pins:
     ts_name: ingect 7
     type: ls
 
-*  - pin: 8
-    id: B5
-    function: "Injector #9"
-    class: outputs
-    ts_name: out_pump1_H
-    type: ls
+  - pin: 8
+    
 
 *  - pin: 9
     id: B7
