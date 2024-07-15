@@ -22,54 +22,30 @@ pins:
     type: hs
 
   - pin: 5
-&    id: G12
-    function: "Injector #5"
-    class: outputs
-    ts_name: ingect 5
-    type: ls
+   
 
   - pin: 6
-&    id: G13
-    function: "Injector #6"
-    class: outputs
-    ts_name: ingect 6
-    type: ls
 
-&  - pin: 7
-    id: G14
-    function: "Injector #7"
-    class: outputs
-    ts_name: ingect 7
-    type: ls
+  - pin: 7
+    
 
   - pin: 8
     
 
-*  - pin: 9
-    id: B7
+  - pin: 9
+*    id: B7
     function: "Injector #11 or radiator fan relay"
     class: outputs
     ts_name: out_pump_L1
     type: ls
 
-&  - pin: 10
-    id: B9
-    class: outputs
-    ts_name: Lowside 13
-    type: ls
+  - pin: 10
+    
 
-&  - pin: 11
-    id: E0
-    function: Lowside output
-    class: outputs
-    ts_name: Lowside 14
-    type: ls
-
-&  - pin: 12
-    id: E1
-    class: outputs
-    ts_name: Lowside 15
-    type: ls
+  - pin: 11
+    
+  - pin: 12
+   
 
   - pin: 13
 
