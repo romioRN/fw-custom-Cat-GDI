@@ -2,18 +2,6 @@
 #include "pch.h"
 #include "Cat_GDI_meta.h"
 
-// PE3 is error LED, configured in board.mk
-Gpio getCommsLedPin() {
-	return Gpio::E4;
-}
-
-Gpio getRunningLedPin() {
-	return Gpio::E5;
-}
-
-Gpio getWarningLedPin() {
-	return Gpio::E6;
-}
 
 static void setInjectorPins() {
 	engineConfiguration->injectionPins[0] = Gpio::Cat_ingect_H_1;
@@ -38,17 +26,33 @@ static void setIgnitionPins() {
 }
 
 
+// PE3 is error LED, configured in board.mk
+Gpio getCommsLedPin() {
+	return Gpio::E4;
+}
 
+Gpio getRunningLedPin() {
+	return Gpio::E5;
+}
 
+Gpio getWarningLedPin() {
+	return Gpio::E6;
+}
 
+void setBoardDefaultConfiguration(void) {
+	setInjectorPins();
+	setIgnitionPins();
+
+	engineConfiguration->isSdCardEnabled = true;
+}
 
 
 
 // board-specific configuration setup
-void setBoardDefaultConfiguration() {
+//void setBoardDefaultConfiguration() {
 
-setIgnitionPins();
-setIgnitionPins();
+//setIgnitionPins();
+//setIgnitionPins();
 
 	
     // engineConfiguration->injectionPins[0] = Gpio::F13;
@@ -78,4 +82,4 @@ setIgnitionPins();
 
 	// Battery sense on PA0
 //	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
-}
+//}
