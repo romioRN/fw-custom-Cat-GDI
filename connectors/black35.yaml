@@ -49,55 +49,74 @@ pins:
     ts_name: ingect 7
     type: ls
 
-  - pin: 8
+*  - pin: 8
     id: B5
     function: "Injector #9"
     class: outputs
-    ts_name: Lowside 9
+    ts_name: out_pump1_H
     type: ls
 
-  - pin: 9
+*  - pin: 9
     id: B7
     function: "Injector #11 or radiator fan relay"
     class: outputs
-    ts_name: Lowside 11
+    ts_name: out_pump_L1
     type: ls
 
-  - pin: 10
+&  - pin: 10
     id: B9
     class: outputs
     ts_name: Lowside 13
     type: ls
 
-  - pin: 11
+&  - pin: 11
     id: E0
     function: Lowside output
     class: outputs
     ts_name: Lowside 14
     type: ls
 
-  - pin: 12
+&  - pin: 12
     id: E1
     class: outputs
     ts_name: Lowside 15
     type: ls
 
   - pin: 13
-    id: D15
+
+    id: E0
+    function: Lowside output
+    class: outputs
+    ts_name: Lowside 14
+    type: ls
+  
+&    id: D15
     function: output
     class: outputs
     ts_name: Highside 3
     type: hs
 
   - pin: 14
-    id: D14
+
+    id: E1
+    class: outputs
+    ts_name: Lowside 15
+    type: ls
+  
+&    id: D14
     function: output
     class: outputs
     ts_name: Highside 4
     type: hs
 
   - pin: 15
-    id: G9
+
+    id: B9
+    class: outputs
+    ts_name: Lowside 13
+    type: ls
+  
+&    id: G9
     function: "Injector #2"
     class: outputs
     ts_name: ingect H 2
@@ -105,7 +124,7 @@ pins:
     color: white
 
   - pin: 16
-    id: G11
+*    id: G11
     function: "Injector #4"
     class: outputs
     ts_name: ingect H 4
@@ -157,10 +176,10 @@ pins:
     color: white
 
   - pin: 21
-    id: B8
+*    id: B8
     function: "Injector #12 or Main relay"
     class: outputs
-    ts_name: Lowside 12
+    ts_name: out_pump_L2
     type: ls
     color: grey
 
