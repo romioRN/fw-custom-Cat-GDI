@@ -1,17 +1,17 @@
 #include "pch.h"
-
+#include "Cat-GDI_meta.h"
+// PE3 is error LED, configured in board.mk
 Gpio getCommsLedPin() {
-	return Gpio::Unassigned;
+	return Gpio::E4;
 }
 
 Gpio getRunningLedPin() {
-	return Gpio::Unassigned;
+	return Gpio::E5;
 }
 
 Gpio getWarningLedPin() {
-	return Gpio::Unassigned;
+	return Gpio::E6;
 }
-
 // board-specific configuration setup
 void setBoardDefaultConfiguration() {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
