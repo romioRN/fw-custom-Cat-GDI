@@ -1,31 +1,60 @@
 pins:
   - pin: 1
-
+    function: "Injector #1"
+    class: outputs
+    ts_name: ingect H 1
+    type: ls
+    color: green
 
   - pin: 2
- 
+    id: G9
+    function: "Injector #2"
+    class: outputs
+    ts_name: ingect H 2
+    type: ls
+    color: white
+    
   - pin: 3
-
+    function: Power GND
+    type: gnd
 
   - pin: 4
+    id: G10
+    function: "Injector #3"
+    class: outputs
+    ts_name: ingect H 3
+    type: ls
+    color: blue
 
   - pin: 5
-  
-
+    id: G11
+    function: "Injector #4"
+    class: outputs
+    ts_name: ingect H 4
+    type: ls
+    color: orange/brown
+    
   - pin: 6
- 
+    id: B5
+    function: "Injector #9"
+    class: outputs
+    ts_name: out_pump1_H
+    type: ls
 
   - pin: 7
-
+    function: Power GND
+    type: gnd
 
   - pin: 8
 
 
   - pin: 9
-   
+    function: CAN-H
+    type: CAN
 
   - pin: 10
-  
+    function: CAN-L
+    type: CAN
 
   
 info:
