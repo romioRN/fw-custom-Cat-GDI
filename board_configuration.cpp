@@ -7,7 +7,7 @@ static void setInjectorPins() {
 	engineConfiguration->injectionPins[0] = Gpio::Cat_ingect_H_1;
 	engineConfiguration->injectionPins[1] = Gpio::Cat_ingect_H_2;
 	engineConfiguration->injectionPins[2] = Gpio::Cat_ingect_H_3;
-	engineConfiguration->injectionPins[3] = Gpio::Cat_ingect_H_3;
+	engineConfiguration->injectionPins[3] = Gpio::Cat_ingect_H_4;
 	engineConfiguration->injectionPins[4] = Gpio::Cat_ingect_5;
 	engineConfiguration->injectionPins[5] = Gpio::Cat_ingect_6;
 	engineConfiguration->injectionPins[6] = Gpio::Cat_ingect_7;
