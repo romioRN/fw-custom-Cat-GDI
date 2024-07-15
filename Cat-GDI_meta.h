@@ -1,8 +1,8 @@
 /*
  * proteus_meta.h
  *
- * @date Oct 2, 2021
- * @author Andrey Belomutskiy, (c) 2012-2021
+ * @date  2024
+ * @author Roman Ryzkov, (c) 2012-2021
  */
 
 #pragma once
