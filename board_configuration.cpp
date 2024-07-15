@@ -57,7 +57,7 @@ static void setupVbatt() {
 	engineConfiguration->analogInputDividerCoefficient = 1.56f;
 	
 	// 6.34k high side/ 1k low side
-	engineConfiguration->vbattDividerCoeff = (92.0f / 10.0f); 
+	engineConfiguration->vbattDividerCoeff = (68.0f / 10.0f); 
 
 	// Battery sense on PA7
 	engineConfiguration->vbattAdcChannel = EFI_ADC_7;
@@ -86,7 +86,11 @@ static void setupSdCard() {
 	engineConfiguration->spi3sckPin = Gpio::C10;
 	engineConfiguration->spi3misoPin = Gpio::C11;
 	engineConfiguration->spi3mosiPin = Gpio::C12;
-
+	
+        engineConfiguration->is_enabled_spi_5 = false;
+	engineConfiguration->spi5sckPin = Gpio::F7;
+	engineConfiguration->spi5misoPin = Gpio::F8;
+	engineConfiguration->spi5mosiPin = Gpio::F9;
 
 }
 
@@ -122,38 +126,3 @@ void setBoardDefaultConfiguration(void) {
 
 
 
-// board-specific configuration setup
-//void setBoardDefaultConfiguration() {
-
-//setIgnitionPins();
-//setIgnitionPins();
-
-	
-    // engineConfiguration->injectionPins[0] = Gpio::F13;
-    // engineConfiguration->ignitionPins[0] = Gpio::E15;
-
-//      engineConfiguration->triggerInputPins[0] = Gpio::B1;
-//	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
-
-//	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
-
-//	engineConfiguration->clt.adcChannel = EFI_ADC_1;
-
-//	engineConfiguration->iat.adcChannel = EFI_ADC_2;
-
-
-    	// 5.6k high side/10k low side = 1.56 ratio divider
-  //  	engineConfiguration->analogInputDividerCoefficient = 1.56f;
-
-    	// 6.34k high side/ 1k low side
-//    	engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
-
-//	engineConfiguration->adcVcc = 3.3f;
-
-//	engineConfiguration->clt.config.bias_resistor = 2490;
-//	engineConfiguration->iat.config.bias_resistor = 2490;
-
-
-	// Battery sense on PA0
-//	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
-//}
