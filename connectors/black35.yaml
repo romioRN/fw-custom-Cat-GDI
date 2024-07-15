@@ -1,27 +1,26 @@
 pins:
   - pin: 1
-    id: A8
-    function: output
-    class: outputs
-    ts_name: Highside 2
-    type: hs
+   
 
   - pin: 2
+    
+
+  - pin: 3
+    
     id: A9
     function: output
     class: outputs
     ts_name: Highside 1
     type: hs
-
-  - pin: 3
-    id: D7
+    
+&    id: D7
     function: "Injector #1"
     class: outputs
     ts_name: ingect H 1
     type: ls
     color: green
 
-  - pin: 4
+*  - pin: 4
     id: G10
     function: "Injector #3"
     class: outputs
@@ -30,20 +29,20 @@ pins:
     color: blue
 
   - pin: 5
-    id: G12
+&    id: G12
     function: "Injector #5"
     class: outputs
     ts_name: ingect 5
     type: ls
 
   - pin: 6
-    id: G13
+&    id: G13
     function: "Injector #6"
     class: outputs
     ts_name: ingect 6
     type: ls
 
-  - pin: 7
+&  - pin: 7
     id: G14
     function: "Injector #7"
     class: outputs
@@ -118,18 +117,39 @@ pins:
     type: gnd
 
   - pin: 18
-    function: Power GND
+
+    id: G12
+    function: "Injector #5"
+    class: outputs
+    ts_name: ingect 5
+    type: ls
+  
+&    function: Power GND
     type: gnd
 
   - pin: 19
-    id: B4
+
+    id: G13
+    function: "Injector #6"
+    class: outputs
+    ts_name: ingect 6
+    type: ls
+  
+&    id: B4
     function: "Injector #8"
     class: outputs
     ts_name: ingect 8
     type: ls
 
   - pin: 20
-    id: B6
+
+    id: G14
+    function: "Injector #7"
+    class: outputs
+    ts_name: ingect 7
+    type: ls
+  
+&    id: B6
     function: "Injector #10 or Fuel Pump relay"
     class: outputs
     ts_name: Lowside 10
