@@ -151,57 +151,89 @@ pins:
     color: white
 
   - pin: 25
-    id: G2
+    function: OUT_INJ1_P
+    type: Ingector
+    color: white
+    
+    & id: G2
     function: Ignition cylinder 12
     class: outputs
     ts_name: Ign 12
     type: high_logic
 
   - pin: 26
-    id: G3
+    function: OUT_INJ2_N
+    type: Ingector
+    color: white
+    
+    & id: G3
     function: Ignition cylinder 11
     class: outputs
     ts_name: Ign 11
     type: high_logic
 
   - pin: 27
-    id: G4
+    function: OUT_INJ2_P
+    type: Ingector
+    color: white
+    
+    & id: G4
     function: Ignition cylinder 10
     class: outputs
     ts_name: Ign 10
     type: high_logic
 
   - pin: 28
-    id: G5
+    function: OUT_INJ3_N
+    type: Ingector
+    color: white
+    
+    & id: G5
     function: Ignition cylinder 9
     class: outputs
     ts_name: Ign 9
     type: high_logic
 
   - pin: 29
-    
+    function: OUT_INJ3_P
+    type: Ingector
+    color: white
 
   - pin: 30
-    
+    function: OUT_INJ4_N
+    type: Ingector
+    color: white
 
   - pin: 31
-    id: G8
+    function: OUT_INJ4_P
+    type: Ingector
+    color: white
+    
+    & id: G8
     function: Ignition cylinder 6
     class: outputs
     ts_name: Ign 6
     type: high_logic
 
   - pin: 32
-    
+    function: OUT_PUMP_N
+    type: Pump
+    color: white
 
   - pin: 33
-   
+    function: OUT_PUMP_P
+    type: Pump
+    color: white
 
   - pin: 34
-    
+    function: ETB 2 negative
+    type: etb
+    color: white
 
   - pin: 35
-    
+    function: ETB 2 positive
+    type: etb
+    color: white
 
 info:
   title: Proteus
