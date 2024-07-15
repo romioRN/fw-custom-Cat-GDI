@@ -1,5 +1,6 @@
 pins:
   - pin: 1
+    id: D7
     function: "Injector #1"
     class: outputs
     ts_name: ingect H 1
