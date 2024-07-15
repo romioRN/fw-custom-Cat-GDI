@@ -46,6 +46,11 @@ static void setIgnitionPins() {
 
 // board-specific configuration setup
 void setBoardDefaultConfiguration() {
+
+setIgnitionPins();
+setIgnitionPins();
+
+	
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
