@@ -25,6 +25,45 @@ static void setIgnitionPins() {
 	engineConfiguration->ignitionPins[7] = Gpio::Cat_IGN_8;
 }
 
+static void setEtbConfig() {
+	// TLE9201 driver
+	// This chip has three control pins:
+	// DIR - sets direction of the motor
+	// PWM - pwm control (enable high, coast low)
+	// DIS - disables motor (enable low)
+
+	// Throttle #1
+	// PWM pin
+	engineConfiguration->etbIo[0].controlPin = Gpio::D12;
+	// DIR pin
+	engineConfiguration->etbIo[0].directionPin1 = Gpio::D10;
+	// Disable pin
+	engineConfiguration->etbIo[0].disablePin = Gpio::D11;
+
+	// Throttle #2
+	// PWM pin
+	engineConfiguration->etbIo[1].controlPin = Gpio::D13;
+	// DIR pin
+	engineConfiguration->etbIo[1].directionPin1 = Gpio::D9;
+	// Disable pin
+	engineConfiguration->etbIo[1].disablePin = Gpio::D8;
+
+	// we only have pwm/dir, no dira/dirb
+	engineConfiguration->etb_use_two_wires = false;
+}
+
+static void setupVbatt() {
+	// 5.6k high side/10k low side = 1.56 ratio divider
+	engineConfiguration->analogInputDividerCoefficient = 1.56f;
+	
+	// 6.34k high side/ 1k low side
+	engineConfiguration->vbattDividerCoeff = (92.0f / 10.0f); 
+
+	// Battery sense on PA7
+	engineConfiguration->vbattAdcChannel = EFI_ADC_7;
+
+	engineConfiguration->adcVcc = 3.3f;
+}
 
 // PE3 is error LED, configured in board.mk
 Gpio getCommsLedPin() {
@@ -39,11 +78,28 @@ Gpio getWarningLedPin() {
 	return Gpio::E6;
 }
 
+void setBoardConfigOverrides() {
+	setupVbatt();
+	setEtbConfig();
+	
+
+	//engineConfiguration->clt.config.bias_resistor = 2490;
+	//engineConfiguration->iat.config.bias_resistor = 2490;
+
+	//CAN 1 bus overwrites
+	engineConfiguration->canRxPin = Gpio::D0;
+	engineConfiguration->canTxPin = Gpio::D1;
+
+	//CAN 2 bus overwrites
+	engineConfiguration->can2RxPin = Gpio::B12;
+	engineConfiguration->can2TxPin = Gpio::B13;
+}
+
 void setBoardDefaultConfiguration(void) {
 	
 	setInjectorPins();
 	setIgnitionPins();
-
+      
 	engineConfiguration->isSdCardEnabled = true;
 }
 
@@ -59,7 +115,7 @@ void setBoardDefaultConfiguration(void) {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
-//   engineConfiguration->triggerInputPins[0] = Gpio::B1;
+//      engineConfiguration->triggerInputPins[0] = Gpio::B1;
 //	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
 //	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
