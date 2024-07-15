@@ -17,7 +17,7 @@ pins:
     id: D7
     function: "Injector #1"
     class: outputs
-    ts_name: Lowside 1
+    ts_name: ingect H 1
     type: ls
     color: green
 
@@ -25,7 +25,7 @@ pins:
     id: G10
     function: "Injector #3"
     class: outputs
-    ts_name: Lowside 3
+    ts_name: ingect H 3
     type: ls
     color: blue
 
@@ -101,7 +101,7 @@ pins:
     id: G9
     function: "Injector #2"
     class: outputs
-    ts_name: Lowside 2
+    ts_name: ingect H 2
     type: ls
     color: white
 
@@ -109,7 +109,7 @@ pins:
     id: G11
     function: "Injector #4"
     class: outputs
-    ts_name: Lowside 4
+    ts_name: ingect H 4
     type: ls
     color: orange/brown
 
