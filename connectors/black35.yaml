@@ -14,9 +14,12 @@ pins:
     ts_name: Highside 1
     type: hs
     
-   
   - pin: 4
-    
+    id: D14
+    function: output
+    class: outputs
+    ts_name: Highside 4
+    type: hs
 
   - pin: 5
 &    id: G12
@@ -89,13 +92,7 @@ pins:
     ts_name: Lowside 15
     type: ls
   
-&    id: D14
-    function: output
-    class: outputs
-    ts_name: Highside 4
-    type: hs
-
-  - pin: 15
+    - pin: 15
 
     id: B9
     class: outputs
