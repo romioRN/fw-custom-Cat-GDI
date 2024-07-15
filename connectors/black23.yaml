@@ -166,10 +166,10 @@ pins:
     ts_name: STM32 PD13
 
 info:
-  title: Proteus
+  title: Cat-GDI
   name: Black23
-  board_url: "https://github.com/rusefi/rusefi/wiki/Proteus-Manual"
-  directory: proteus
+  board_url: "https://github.com/romioRN/fw-custom-Cat-GDI/wiki"
+  directory: Cat-GDI
   cid: black23
   image:
     file: black23.jpg
