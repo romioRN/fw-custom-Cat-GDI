@@ -1,6 +1,6 @@
 
 #include "pch.h"
-#include "Cat-GDI_meta.h"
+#include "Cat_GDI_meta.h"
 
 // PE3 is error LED, configured in board.mk
 Gpio getCommsLedPin() {
