@@ -104,8 +104,11 @@ pins:
     type: ls
 
   - pin: 17
-    function: Power GND
-    type: gnd
+    id: G8
+    function: Ignition cylinder 6
+    class: outputs
+    ts_name: Ign 6
+    type: high_logic
 
   - pin: 18
     id: G12
@@ -154,46 +157,22 @@ pins:
     function: OUT_INJ1_P
     type: Ingector
     color: white
-    
-    & id: G2
-    function: Ignition cylinder 12
-    class: outputs
-    ts_name: Ign 12
-    type: high_logic
-
+        
   - pin: 26
     function: OUT_INJ2_N
     type: Ingector
     color: white
     
-    & id: G3
-    function: Ignition cylinder 11
-    class: outputs
-    ts_name: Ign 11
-    type: high_logic
-
   - pin: 27
     function: OUT_INJ2_P
     type: Ingector
     color: white
-    
-    & id: G4
-    function: Ignition cylinder 10
-    class: outputs
-    ts_name: Ign 10
-    type: high_logic
-
+        
   - pin: 28
     function: OUT_INJ3_N
     type: Ingector
     color: white
-    
-    & id: G5
-    function: Ignition cylinder 9
-    class: outputs
-    ts_name: Ign 9
-    type: high_logic
-
+      
   - pin: 29
     function: OUT_INJ3_P
     type: Ingector
@@ -208,12 +187,6 @@ pins:
     function: OUT_INJ4_P
     type: Ingector
     color: white
-    
-    & id: G8
-    function: Ignition cylinder 6
-    class: outputs
-    ts_name: Ign 6
-    type: high_logic
 
   - pin: 32
     function: OUT_PUMP_N
