@@ -97,7 +97,13 @@ pins:
     color: blue
 
   - pin: 16
-    function: CAN bus low
+    +id: D15
+    function: output
+    class: outputs
+    ts_name: Highside 3
+    type: hs
+    
+    & function: CAN bus low
     color: blue
     type: can
 
