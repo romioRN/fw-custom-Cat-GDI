@@ -10,7 +10,7 @@
 // not directly related but often used together
 #include "defaults.h"
 
-#define Cat-GDI_DEFAULT_AT_PULLUP 2700
+#define Cat_GDI_DEFAULT_AT_PULLUP 2700
 
 #define Cat_ingect_H_1 D7
 #define Cat_ingect_H_2 G9
