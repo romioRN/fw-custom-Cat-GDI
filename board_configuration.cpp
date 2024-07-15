@@ -40,6 +40,7 @@ Gpio getWarningLedPin() {
 }
 
 void setBoardDefaultConfiguration(void) {
+	
 	setInjectorPins();
 	setIgnitionPins();
 
