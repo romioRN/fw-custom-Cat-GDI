@@ -33,21 +33,21 @@ pins:
     id: G12
     function: "Injector #5"
     class: outputs
-    ts_name: Lowside 5
+    ts_name: ingect 5
     type: ls
 
   - pin: 6
     id: G13
     function: "Injector #6"
     class: outputs
-    ts_name: Lowside 6
+    ts_name: ingect 6
     type: ls
 
   - pin: 7
     id: G14
     function: "Injector #7"
     class: outputs
-    ts_name: Lowside 7
+    ts_name: ingect 7
     type: ls
 
   - pin: 8
@@ -125,7 +125,7 @@ pins:
     id: B4
     function: "Injector #8"
     class: outputs
-    ts_name: Lowside 8
+    ts_name: ingect 8
     type: ls
 
   - pin: 20
