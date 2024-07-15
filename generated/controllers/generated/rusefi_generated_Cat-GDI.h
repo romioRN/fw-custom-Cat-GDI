@@ -1288,7 +1288,7 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets true
 #define show_test_presets false
-#define SIGNATURE_HASH 2344140517
+#define SIGNATURE_HASH 2234972443
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1631,7 +1631,7 @@
 #define ts_show_fuel_pump true
 #define ts_show_fuel_relay_pin true
 #define ts_show_fuel_strategy true
-#define ts_show_full_pinout false
+#define ts_show_full_pinout true
 #define ts_show_gdi true
 #define ts_show_globalTriggerAngleOffset true
 #define ts_show_hardware_simulator false
@@ -1699,7 +1699,7 @@
 #define ts_show_vvt_output true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.07.15.Cat-GDI.2344140517"
+#define TS_SIGNATURE "rusEFI main.2024.07.15.Cat-GDI.2234972443"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
