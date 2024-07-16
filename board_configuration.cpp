@@ -86,8 +86,11 @@ static void setupSdCard() {
 	engineConfiguration->spi3sckPin = Gpio::C10;
 	engineConfiguration->spi3misoPin = Gpio::C11;
 	engineConfiguration->spi3mosiPin = Gpio::C12;
-	
-        
+
+	engineConfiguration->is_enabled_spi_5 = true;
+        engineConfiguration->spi5sckPin = Gpio::F7;
+	engineConfiguration->spi5misoPin = Gpio::F8;
+	engineConfiguration->spi5mosiPin = Gpio::F9;
 
 }
 
@@ -98,10 +101,6 @@ void setBoardConfigOverrides() {
 
 	//engineConfiguration->clt.config.bias_resistor = 2490;
 	//engineConfiguration->iat.config.bias_resistor = 2490;
-
-	engineConfiguration->spi5sckPin = Gpio::F7;
-	engineConfiguration->spi5misoPin = Gpio::F8;
-	engineConfiguration->spi5mosiPin = Gpio::F9;
 
 	//CAN 1 bus overwrites
 	engineConfiguration->canRxPin = Gpio::D0;
