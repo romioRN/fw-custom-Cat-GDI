@@ -1,8 +1,8 @@
 /*
- *Cat-GDI_meta.h
+ * Cat-GDI_meta.h
  *
  * @date  2024.
- * @author Roman Ryzkov.
+ *
  */
 
 #pragma once
