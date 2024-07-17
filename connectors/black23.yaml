@@ -65,13 +65,7 @@ pins:
   - pin: 9
     \\код написан вручную 
     function: Power 12V_IGN
-    type: 12V_IGN
-    
-    & id: [E13, E13]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input
-    ts_name: Digital 5
-    type: din    
+    type: 12V_IGN  
 
   - pin: 10
     \\HS2 не нашла ни в одном разъеме
@@ -108,7 +102,7 @@ pins:
     color: blue
 
   - pin: 16
-    +id: D15
+    id: D15
     function: output
     class: outputs
     ts_name: Highside 3
@@ -119,37 +113,49 @@ pins:
     type: can
 
   - pin: 17
-    function: CAN bus high
+    & function: CAN bus high
     color: green
     type: can
 
   - pin: 18
-    id: EFI_ADC_7
+    & id: EFI_ADC_7
     class: analog_inputs
     ts_name: Battery Sense
     function: Ignition power / ECU power source. Connect this pin to the output of your ignition switch.
     type: 12v
 
   - pin: 19
-    function: Power GND
+    & function: Power GND
     type: gnd
 
   - pin: 20
-    function: Power GND
+    & function: Power GND
     type: gnd
 
   - pin: 21
-    function: CAN2 bus low
+    function: Power 12V_N
+    type: 12V_N
+    
+    & function: CAN2 bus low
     type: can
     color: blue
 
   - pin: 22
-    function: CAN2 bus high
+    function: Power 12V_N
+    type: 12V_N
+    
+    & function: CAN2 bus high
     type: can
     color: green
 
   - pin: 23
-    function: Power supply from main relay. Connect this pin to the output of the car's main relay that also powers injectors, coils, etc. Supplies power to electronic throttle drivers and high side outputs.
+    id: [E13, E13]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input
+    ts_name: Digital 5
+    type: din  
+    
+    & function: Power supply from main relay. Connect this pin to the output of the car's main relay that also powers injectors, coils, etc. Supplies power to electronic throttle drivers and high side outputs.
     type: 12v
 
   - pin: PD8
