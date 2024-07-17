@@ -71,10 +71,12 @@ pins:
     type: 5v
 
   - pin: 11
+    \\ не нашла id F4 ни в одном раъеме, на схеме есть
     & function: 12V protected output for sensors
     type: 12v
 
   - pin: 12
+  \\ не нашла id F5 ни в одном раъеме, на схеме есть
     & function: 12V protected output for sensors
     type: 12v
 
@@ -156,11 +158,13 @@ pins:
     type: din
 
   - pin: 25
+  \\ на корневом листе VR-
     * id: E7
     class: event_inputs
     ts_name: VR 1
 
   - pin: 26
+  \\ на корневом листе VR+
     * id: E8
     class: event_inputs
     ts_name: VR 2
