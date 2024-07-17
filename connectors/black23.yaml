@@ -1,29 +1,21 @@
 pins:
   - pin: 1
-    id: [E11, E11]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input for instance Hall type CAM
-    ts_name: Digital 2
-    type: din
-    color: green
+    function: Power 12V_MR
+    type: 12V_MR
 
   - pin: 2
-    id: [E12, E12]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input for instance VSS
-    ts_name: Digital 3
-    type: din
-    color: white
+    function: Power 12V_MR
+    type: 12V_MR
 
   - pin: 3
-    id: [E14, E14]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input for instance Start Button
-    ts_name: Digital 4
-    type: din
+    function: Power 12V_MR
+    type: 12V_MR
 
   - pin: 4
-    function: "Variable Reluctance #2 positive"
+    function: Power GND
+    type: gnd
+    
+    & function: "Variable Reluctance #2 positive"
     type: vr
     color: blue
 
@@ -32,7 +24,10 @@ pins:
     ts_name: VR 2
 
   - pin: 5
-    function: "Variable Reluctance #1 positive"
+    function: Power GND
+    type: gnd
+    
+    & function: "Variable Reluctance #1 positive"
     type: vr
     color: blue
 
@@ -58,19 +53,10 @@ pins:
     type: din    
 
   - pin: 10
-    id: [C6, C6]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input
-    ts_name: Digital 1
-    type: din
-    color: yellow
+    
 
   - pin: 11
-    id: [E15, E15]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input
-    ts_name: Digital 6
-    type: din
+    
 
   - pin: 12
     function: "Variable Reluctance #2 negative"
@@ -78,7 +64,10 @@ pins:
     color: white
 
   - pin: 13
-    function: "Variable Reluctance #1 negative"
+    function: Power GND
+    type: gnd
+    
+    & function: "Variable Reluctance #1 negative"
     type: vr
     color: white
 
