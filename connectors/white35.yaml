@@ -18,84 +18,18 @@ pins:
     type: din
     color: green
   
-    & function: Sensor GND
-    type: sgnd
-
   - pin: 3
     function: Power GND
     type: gnd
   
-    & function: Sensor GND
-    type: sgnd
-
   - pin: 4
-    function: Sensor GND
-    type: sgnd
-
+    id: [A5, EFI_ADC_5]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 10
+    function: "Analog Voltage Input #10"
+    type: av
+    
   - pin: 5
-    function: Sensor GND
-    type: sgnd
-
-  - pin: 6
-    function: Sensor GND
-    type: sgnd
-
-  - pin: 7
-    function: Sensor GND
-    type: sgnd
-
-  - pin: 8
-    function: Sensor GND
-    type: sgnd
-
-  - pin: 9
-    function: "Analog Voltage +5 supply #1"
-    type: 5v
-
-  - pin: 10
-    function: "Analog Voltage +5 supply #2"
-    type: 5v
-
-  - pin: 11
-    function: 12V protected output for sensors
-    type: 12v
-
-  - pin: 12
-    function: 12V protected output for sensors
-    type: 12v
-
-  - pin: 13
-    id: [C0, EFI_ADC_10]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 1
-    function: "Analog Voltage Input #1 MAP"
-    type: av
-    color: yellow
-
-  - pin: 14
-    id: [C2, EFI_ADC_12]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 3
-    function: "Analog Voltage Input #3 TPS2/TPS1_2"
-    type: av
-    color: blue
-
-  - pin: 15
-    id: [A0, EFI_ADC_0]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 5
-    function: "Analog Voltage Input #5"
-    type: av
-
-  - pin: 16
-    id: [A2, EFI_ADC_2]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 7
-    function: "Analog Voltage Input #7 (PPS2)"
-    type: av
-    color: orange/brown
-
-  - pin: 17
     id: [A4, EFI_ADC_4]
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 9
@@ -103,42 +37,132 @@ pins:
     type: av
     color: white
 
-  - pin: 18
+  - pin: 6
+    id: [A3, EFI_ADC_3]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 8
+    function: "Analog Voltage Input #8"
+    type: av
+
+  - pin: 7
+    id: [A0, EFI_ADC_0]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 5
+    function: "Analog Voltage Input #5"
+    type: av
+
+  - pin: 8
+    & function: Sensor GND
+    type: sgnd
+
+  - pin: 9
+    & function: "Analog Voltage +5 supply #1"
+    type: 5v
+
+  - pin: 10
+    id: [C2, EFI_ADC_12]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 3
+    function: "Analog Voltage Input #3 TPS2/TPS1_2"
+    type: av
+    color: blue
+    
+    & function: "Analog Voltage +5 supply #2"
+    type: 5v
+
+  - pin: 11
+    & function: 12V protected output for sensors
+    type: 12v
+
+  - pin: 12
+    & function: 12V protected output for sensors
+    type: 12v
+
+  - pin: 13
+    id: [E14, E14]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input for instance Start Button
+    ts_name: Digital 4
+    type: din
+    
+    & id: [C0, EFI_ADC_10]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 1
+    function: "Analog Voltage Input #1 MAP"
+    type: av
+    color: yellow
+
+  - pin: 14
+    id: [E12, E12]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input for instance VSS
+    ts_name: Digital 3
+    type: din
+    color: white
+
+  - pin: 15
+    
+
+  - pin: 16
     id: [A6, EFI_ADC_6]
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 11
     function: "Analog Voltage Input #11"
     type: av
 
-  - pin: 19
-    id: [C4, EFI_ADC_14]
+  - pin: 17
+    id: [A2, EFI_ADC_2]
     class: [switch_inputs, analog_inputs]
-    ts_name: Analog Temp 1
-    function: "Analog Thermistor Input #1"
-    type: at
+    ts_name: Analog Volt 7
+    function: "Analog Voltage Input #7 (PPS2)"
+    type: av
+    color: orange/brown
+
+  - pin: 18
+    id: [A1, EFI_ADC_1]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 6
+    function: "Analog Voltage Input #6"
+    type: av
+
+  - pin: 19
+    
 
   - pin: 20
-    id: [B0, EFI_ADC_8]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Temp 3
-    function: "Analog Thermistor Input #3 (CLT)"
-    type: at
-    color: grey
+    
 
   - pin: 21
-    function: "Analog Voltage +5 supply #1"
+    id: [C3, EFI_ADC_13]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 4
+    function: "Analog Voltage Input #4"
+    type: av
+    
+    & function: "Analog Voltage +5 supply #1"
     type: 5v
 
   - pin: 22
-    function: "Analog Voltage +5 supply #2"
+    function: Power 12V_starter
+    type: starter
+  
+    & function: "Analog Voltage +5 supply #2"
     type: 5v
 
   - pin: 23
-    function: Sensor GND
+    function: Power 12V_starter
+    type: starter
+  
+    & function: Sensor GND
     type: sgnd
 
   - pin: 24
-    id: [C1, EFI_ADC_11]
+    id: [E15, E15]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input
+    ts_name: Digital 6
+    type: din
+    
+    & id: [C1, EFI_ADC_11]
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 2
     function: "Analog Voltage Input #2 TPS"
@@ -146,65 +170,71 @@ pins:
     color: green
 
   - pin: 25
-    id: [C3, EFI_ADC_13]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 4
-    function: "Analog Voltage Input #4"
-    type: av
+    * id: E7
+    class: event_inputs
+    ts_name: VR 1
 
   - pin: 26
-    id: [A1, EFI_ADC_1]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 6
-    function: "Analog Voltage Input #6"
-    type: av
+    * id: E8
+    class: event_inputs
+    ts_name: VR 2
 
   - pin: 27
-    id: [A3, EFI_ADC_3]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 8
-    function: "Analog Voltage Input #8"
-    type: av
-
+    
   - pin: 28
-    id: [A5, EFI_ADC_5]
+   & id: [A5, EFI_ADC_5]
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 10
     function: "Analog Voltage Input #10"
     type: av
 
   - pin: 29
-    function: Sensor GND
-    type: sgnd
+    function: Power 12V_MR
+    type: 12V_MR
 
   - pin: 30
-    id: [C5, EFI_ADC_15]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Temp 2
-    function: Intake air temperature IAT
-    type: at
-    color: blue
+    
 
   - pin: 31
-    id: [B1, EFI_ADC_9]
+    & id: [B1, EFI_ADC_9]
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Temp 4
     function: "Analog Thermistor Input #4"
     type: at
 
   - pin: 32
-    function: "Analog Voltage +5 supply #1"
+    & function: "Analog Voltage +5 supply #1"
     type: 5v
 
   - pin: 33
-    function: "Analog Voltage +5 supply #2"
+    id: [C4, EFI_ADC_14]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Temp 1
+    function: "Analog Thermistor Input #1"
+    type: at
+    
+    & function: "Analog Voltage +5 supply #2"
     type: 5v
 
   - pin: 34
-    function: Knock input 1 on 0.4. Due to a hardware defect, knock hardware can't work on v0.3 :(
+    id: [C5, EFI_ADC_15]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Temp 2
+    function: Intake air temperature IAT
+    type: at
+    color: blue
+    
+    & function: Knock input 1 on 0.4. Due to a hardware defect, knock hardware can't work on v0.3 :(
 
   - pin: 35
-    function: Knock input 2 on 0.4
+    id: [B0, EFI_ADC_8]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Temp 3
+    function: "Analog Thermistor Input #3 (CLT)"
+    type: at
+    color: grey
+    
+    & function: Knock input 2 on 0.4
 
 info:
   title: Proteus
