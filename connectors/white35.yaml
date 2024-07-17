@@ -161,13 +161,6 @@ pins:
     function: Digital trigger/switch input
     ts_name: Digital 6
     type: din
-    
-    & id: [C1, EFI_ADC_11]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 2
-    function: "Analog Voltage Input #2 TPS"
-    type: av
-    color: green
 
   - pin: 25
     * id: E7
@@ -196,11 +189,7 @@ pins:
     
 
   - pin: 31
-    & id: [B1, EFI_ADC_9]
-    class: [switch_inputs, analog_inputs]
-    ts_name: Analog Temp 4
-    function: "Analog Thermistor Input #4"
-    type: at
+    
 
   - pin: 32
     & function: "Analog Voltage +5 supply #1"
