@@ -14,26 +14,10 @@ pins:
   - pin: 4
     function: Power GND
     type: gnd
-    
-    & function: "Variable Reluctance #2 positive"
-    type: vr
-    color: blue
-
-  - id: E8
-    class: event_inputs
-    ts_name: VR 2
 
   - pin: 5
     function: Power GND
     type: gnd
-    
-    & function: "Variable Reluctance #1 positive"
-    type: vr
-    color: blue
-
-  - id: E7
-    class: event_inputs
-    ts_name: VR 1
 
   - pin: 6
     id: [B1, EFI_ADC_9]
@@ -57,49 +41,39 @@ pins:
     function: "Analog Voltage Input #1 MAP"
     type: av
     color: yellow
-    
-    & function: ETB 2 negative
-    type: etb
-    color: white
 
   - pin: 9
-    \\код написан вручную 
     function: Power 12V_IGN
     type: 12V_IGN  
 
   - pin: 10
-    \\HS2 не нашла ни в одном разъеме
+    id: A8
+    function: output
+    class: outputs
+    ts_name: Highside 2
+    type: hs
 
   - pin: 11
-    
+    function: CAN-H 1
+    color: blue
+    type: can
 
   - pin: 12
-    function: "Variable Reluctance #2 negative"
-    type: vr
-    color: white
+    function: CAN-L 1
+    color: blue
+    type: can
 
   - pin: 13
     function: Power GND
     type: gnd
-    
-    & function: "Variable Reluctance #1 negative"
-    type: vr
-    color: white
 
   - pin: 14
     function: Power 12V_start
     type: 12V_start
-    
-    & function: Ground
-    type: gnd
 
   - pin: 15
     function: Power 12V_start
     type: 12V_start
-    
-    & function: ETB 2 positive
-    type: etb
-    color: blue
 
   - pin: 16
     id: D15
@@ -107,46 +81,38 @@ pins:
     class: outputs
     ts_name: Highside 3
     type: hs
-    
-    & function: CAN bus low
+
+  - pin: 17
+    function: CAN-H 2
     color: blue
     type: can
 
-  - pin: 17
-    & function: CAN bus high
-    color: green
+  - pin: 18
+    function: CAN-L 2
+    color: blue
     type: can
 
-  - pin: 18
-    & id: EFI_ADC_7
-    class: analog_inputs
-    ts_name: Battery Sense
-    function: Ignition power / ECU power source. Connect this pin to the output of your ignition switch.
-    type: 12v
-
   - pin: 19
-    & function: Power GND
-    type: gnd
+    id: B8
+    function: output
+    class: outputs
+    ts_name: Fuel pump 2 low
+    type: PUMP
 
   - pin: 20
-    & function: Power GND
-    type: gnd
+    id: B7
+    function: output
+    class: outputs
+    ts_name: Fuel pump 1 low
+    type: PUMP
 
   - pin: 21
     function: Power 12V_N
     type: 12V_N
     
-    & function: CAN2 bus low
-    type: can
-    color: blue
-
   - pin: 22
     function: Power 12V_N
     type: 12V_N
-    
-    & function: CAN2 bus high
-    type: can
-    color: green
 
   - pin: 23
     id: [E13, E13]
@@ -154,9 +120,6 @@ pins:
     function: Digital trigger/switch input
     ts_name: Digital 5
     type: din  
-    
-    & function: Power supply from main relay. Connect this pin to the output of the car's main relay that also powers injectors, coils, etc. Supplies power to electronic throttle drivers and high side outputs.
-    type: 12v
 
   - pin: PD8
     id: D8
