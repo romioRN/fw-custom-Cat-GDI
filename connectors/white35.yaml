@@ -1,14 +1,31 @@
 pins:
   - pin: 1
-    function: Sensor GND
+    id: [C6, C6]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input
+    ts_name: Digital 1
+    type: din
+    color: yellow
+    
+    & function: Sensor GND
     type: sgnd
 
   - pin: 2
-    function: Sensor GND
+    id: [E11, E11]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input for instance Hall type CAM
+    ts_name: Digital 2
+    type: din
+    color: green
+  
+    & function: Sensor GND
     type: sgnd
 
   - pin: 3
-    function: Sensor GND
+    function: Power GND
+    type: gnd
+  
+    & function: Sensor GND
     type: sgnd
 
   - pin: 4
