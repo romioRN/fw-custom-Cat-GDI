@@ -1,29 +1,21 @@
 pins:
   - pin: 1
-    id: [E11, E11]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input for instance Hall type CAM
-    ts_name: Digital 2
-    type: din
-    color: green
+    function: Power 12V_MR
+    type: 12V_MR
 
   - pin: 2
-    id: [E12, E12]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input for instance VSS
-    ts_name: Digital 3
-    type: din
-    color: white
+    function: Power 12V_MR
+    type: 12V_MR
 
   - pin: 3
-    id: [E14, E14]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input for instance Start Button
-    ts_name: Digital 4
-    type: din
+    function: Power 12V_MR
+    type: 12V_MR
 
   - pin: 4
-    function: "Variable Reluctance #2 positive"
+    function: Power GND
+    type: gnd
+    
+    & function: "Variable Reluctance #2 positive"
     type: vr
     color: blue
 
@@ -32,7 +24,10 @@ pins:
     ts_name: VR 2
 
   - pin: 5
-    function: "Variable Reluctance #1 positive"
+    function: Power GND
+    type: gnd
+    
+    & function: "Variable Reluctance #1 positive"
     type: vr
     color: blue
 
@@ -41,41 +36,42 @@ pins:
     ts_name: VR 1
 
   - pin: 6
-    function: ETB 1 negative
-    type: etb
-    color: white
-
+    id: [B1, EFI_ADC_9]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Temp 4
+    function: "Analog Thermistor Input #4"
+    type: at
+    
   - pin: 7
-    function: ETB 1 positive
-    type: etb
-    color: blue
+    id: [C1, EFI_ADC_11]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 2
+    function: "Analog Voltage Input #2 TPS"
+    type: av
+    color: green
 
   - pin: 8
-    function: ETB 2 negative
+    id: [C0, EFI_ADC_10]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 1
+    function: "Analog Voltage Input #1 MAP"
+    type: av
+    color: yellow
+    
+    & function: ETB 2 negative
     type: etb
     color: white
 
   - pin: 9
-    id: [E13, E13]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input
-    ts_name: Digital 5
-    type: din    
+    \\код написан вручную 
+    function: Power 12V_IGN
+    type: 12V_IGN  
 
   - pin: 10
-    id: [C6, C6]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input
-    ts_name: Digital 1
-    type: din
-    color: yellow
+    \\HS2 не нашла ни в одном разъеме
 
   - pin: 11
-    id: [E15, E15]
-    class: [event_inputs, switch_inputs]
-    function: Digital trigger/switch input
-    ts_name: Digital 6
-    type: din
+    
 
   - pin: 12
     function: "Variable Reluctance #2 negative"
@@ -83,56 +79,83 @@ pins:
     color: white
 
   - pin: 13
-    function: "Variable Reluctance #1 negative"
+    function: Power GND
+    type: gnd
+    
+    & function: "Variable Reluctance #1 negative"
     type: vr
     color: white
 
   - pin: 14
-    function: Ground
+    function: Power 12V_start
+    type: 12V_start
+    
+    & function: Ground
     type: gnd
 
   - pin: 15
-    function: ETB 2 positive
+    function: Power 12V_start
+    type: 12V_start
+    
+    & function: ETB 2 positive
     type: etb
     color: blue
 
   - pin: 16
-    function: CAN bus low
+    id: D15
+    function: output
+    class: outputs
+    ts_name: Highside 3
+    type: hs
+    
+    & function: CAN bus low
     color: blue
     type: can
 
   - pin: 17
-    function: CAN bus high
+    & function: CAN bus high
     color: green
     type: can
 
   - pin: 18
-    id: EFI_ADC_7
+    & id: EFI_ADC_7
     class: analog_inputs
     ts_name: Battery Sense
     function: Ignition power / ECU power source. Connect this pin to the output of your ignition switch.
     type: 12v
 
   - pin: 19
-    function: Power GND
+    & function: Power GND
     type: gnd
 
   - pin: 20
-    function: Power GND
+    & function: Power GND
     type: gnd
 
   - pin: 21
-    function: CAN2 bus low
+    function: Power 12V_N
+    type: 12V_N
+    
+    & function: CAN2 bus low
     type: can
     color: blue
 
   - pin: 22
-    function: CAN2 bus high
+    function: Power 12V_N
+    type: 12V_N
+    
+    & function: CAN2 bus high
     type: can
     color: green
 
   - pin: 23
-    function: Power supply from main relay. Connect this pin to the output of the car's main relay that also powers injectors, coils, etc. Supplies power to electronic throttle drivers and high side outputs.
+    id: [E13, E13]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input
+    ts_name: Digital 5
+    type: din  
+    
+    & function: Power supply from main relay. Connect this pin to the output of the car's main relay that also powers injectors, coils, etc. Supplies power to electronic throttle drivers and high side outputs.
     type: 12v
 
   - pin: PD8
