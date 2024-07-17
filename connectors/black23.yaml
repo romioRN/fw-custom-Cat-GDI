@@ -96,14 +96,14 @@ pins:
     id: B8
     function: output
     class: outputs
-    ts_name: Fuel pump 2 low
+    ts_name: pump 2 low
     type: PUMP
 
   - pin: 20
     id: B7
     function: output
     class: outputs
-    ts_name: Fuel pump 1 low
+    ts_name: pump 1 low
     type: PUMP
 
   - pin: 21
