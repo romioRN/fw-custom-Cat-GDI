@@ -93,11 +93,17 @@ pins:
     color: white
 
   - pin: 14
-    function: Ground
+    function: Power 12V_start
+    type: 12V_start
+    
+    & function: Ground
     type: gnd
 
   - pin: 15
-    function: ETB 2 positive
+    function: Power 12V_start
+    type: 12V_start
+    
+    & function: ETB 2 positive
     type: etb
     color: blue
 
