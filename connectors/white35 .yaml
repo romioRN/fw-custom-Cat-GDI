@@ -65,14 +65,10 @@ pins:
     color: blue
 
   - pin: 11
-    id: F4 
-    class: analog_inputs
     function: Knock input 1
     ts_name: Knock 1
 
   - pin: 12
-    id: F5 
-    class: analog_inputs
     function: Knock input 2
     ts_name: Knock 2
    
