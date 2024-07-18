@@ -68,15 +68,15 @@ static void setupVbatt() {
 
 // PE3 is error LED, configured in board.mk
 Gpio getCommsLedPin() {
-	return Gpio::E4;
+	return Gpio::Unassigned;
 }
 
 Gpio getRunningLedPin() {
-	return Gpio::E5;
+	return Gpio::Unassigned;
 }
 
 Gpio getWarningLedPin() {
-	return Gpio::E6;
+	return Gpio::Unassigned;
 }
 
 static void setupDefaultSensorInputs() {
