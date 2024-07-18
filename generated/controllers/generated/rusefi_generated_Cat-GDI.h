@@ -54,8 +54,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",15="Analog Temp 1",16="Analog Temp 2",9="Analog Temp 3",6="Analog Volt 10",7="Analog Volt 11",13="Analog Volt 3",14="Analog Volt 4",1="Analog Volt 5",2="Analog Volt 6",3="Analog Volt 7",4="Analog Volt 8",5="Analog Volt 9"
-#define adc_channel_e_fullenum "NONE","Analog Volt 5","Analog Volt 6","Analog Volt 7","Analog Volt 8","Analog Volt 9","Analog Volt 10","Analog Volt 11","INVALID","Analog Temp 3","INVALID","INVALID","INVALID","Analog Volt 3","Analog Volt 4","Analog Temp 1","Analog Temp 2"
+#define adc_channel_e_enum 0="NONE",15="Analog Thermistor 1(CLT)",16="Analog Thermistor 2(IAT)",9="Analog Thermistor 3",6="Analog Voltage 10",7="Analog Voltage 11",13="Analog Voltage 3 (TPS2)",14="Analog Voltage 4(TPS1)",1="Analog Voltage 5 (fuel high pressure)",2="Analog Voltage 6(Oil pressure)",3="Analog Voltage 7",4="Analog Voltage 8(MAP)",5="Analog Voltage 9"
+#define adc_channel_e_fullenum "NONE","Analog Voltage 5 (fuel high pressure)","Analog Voltage 6(Oil pressure)","Analog Voltage 7","Analog Voltage 8(MAP)","Analog Voltage 9","Analog Voltage 10","Analog Voltage 11","INVALID","Analog Thermistor 3","INVALID","INVALID","INVALID","Analog Voltage 3 (TPS2)","Analog Voltage 4(TPS1)","Analog Thermistor 1(CLT)","Analog Thermistor 2(IAT)"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1290,7 +1290,7 @@
 #define show_microRusEFI_presets false
 #define show_Proteus_presets true
 #define show_test_presets false
-#define SIGNATURE_HASH 3039149861
+#define SIGNATURE_HASH 3017639122
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1316,8 +1316,8 @@
 #define stft_cell_cfg_s_size 4
 #define STFT_CELL_COUNT 4
 #define stft_s_size 24
-#define switch_input_pin_e_enum 0="NONE",38="Analog Temp 1",39="Analog Temp 2",18="Analog Temp 3",7="Analog Volt 10",8="Analog Volt 11",36="Analog Volt 3",37="Analog Volt 4",2="Analog Volt 5",3="Analog Volt 6",4="Analog Volt 7",5="Analog Volt 8",6="Analog Volt 9",40="Digital 1",77="Digital 2",78="Digital 3",80="Digital 4",81="Digital 6"
-#define switch_input_pin_e_fullenum "NONE","INVALID","Analog Volt 5","Analog Volt 6","Analog Volt 7","Analog Volt 8","Analog Volt 9","Analog Volt 10","Analog Volt 11","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Analog Temp 3","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Analog Volt 3","Analog Volt 4","Analog Temp 1","Analog Temp 2","Digital 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Digital 2","Digital 3","INVALID","Digital 4","Digital 6"
+#define switch_input_pin_e_enum 0="NONE",38="Analog Thermistor 1(CLT)",39="Analog Thermistor 2(IAT)",18="Analog Thermistor 3",7="Analog Voltage 10",8="Analog Voltage 11",36="Analog Voltage 3 (TPS2)",37="Analog Voltage 4(TPS1)",2="Analog Voltage 5 (fuel high pressure)",3="Analog Voltage 6(Oil pressure)",4="Analog Voltage 7",5="Analog Voltage 8(MAP)",6="Analog Voltage 9",40="Digital 1",77="Digital 2",78="Digital 3",80="Digital 4",81="Digital 6"
+#define switch_input_pin_e_fullenum "NONE","INVALID","Analog Voltage 5 (fuel high pressure)","Analog Voltage 6(Oil pressure)","Analog Voltage 7","Analog Voltage 8(MAP)","Analog Voltage 9","Analog Voltage 10","Analog Voltage 11","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Analog Thermistor 3","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Analog Voltage 3 (TPS2)","Analog Voltage 4(TPS1)","Analog Thermistor 1(CLT)","Analog Thermistor 2(IAT)","Digital 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Digital 2","Digital 3","INVALID","Digital 4","Digital 6"
 #define TABLE_2_LOAD_SIZE 8
 #define TABLE_2_RPM_SIZE 8
 #define TABLE_3_LOAD_SIZE 8
@@ -1590,6 +1590,7 @@
 #define TS_SET_LOGGER_SWITCH 'l'
 #define TS_SET_LOGGER_SWITCH_char l
 #define ts_show_air_conditioning true
+#define ts_show_alternator true
 #define ts_show_analog_divider false
 #define ts_show_auxserial_pins true
 #define ts_show_bank2_cam1 true
@@ -1654,6 +1655,7 @@
 #define ts_show_main_relay true
 #define ts_show_main_relay_microRusEFI_message false
 #define ts_show_mc33810 false
+#define ts_show_multispark true
 #define ts_show_number_of_cylinders true
 #define ts_show_odd_fire true
 #define ts_show_onboard_accelerometer false
@@ -1678,10 +1680,13 @@
 #define ts_show_spi5_pins false
 #define ts_show_spi6_enable true
 #define ts_show_spi6_pins false
+#define ts_show_staged_injection true
+#define ts_show_start_button true
 #define ts_show_starter_disable true
 #define ts_show_startup_map_baro_grab true
 #define ts_show_status_leds true
 #define ts_show_sync_cam true
+#define ts_show_tachometer true
 #define ts_show_tcu false
 #define ts_show_tle8888 false
 #define ts_show_top_level_can_menu true
@@ -1702,7 +1707,7 @@
 #define ts_show_vvt_output true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.07.18.Cat-GDI.3039149861"
+#define TS_SIGNATURE "rusEFI main.2024.07.18.Cat-GDI.3017639122"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
