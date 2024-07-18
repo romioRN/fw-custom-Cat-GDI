@@ -113,7 +113,7 @@ void setBoardConfigOverrides() {
 	setupSdCard();
 
 	engineConfiguration->clt.config.bias_resistor = 2490;
-	engineConfiguration->iat.config.bias_resistor = 2490;
+	//engineConfiguration->iat.config.bias_resistor = 2490;
 
 	//CAN 1 bus overwrites
 	engineConfiguration->canRxPin = Gpio::D0;
