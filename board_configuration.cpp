@@ -88,8 +88,8 @@ static void setupDefaultSensorInputs() {
 	// open question if it's great to have TPS in default TPS - the down-side is for
 	// vehicles without TPS or for first start without TPS one would have to turn in off
 	// to avoid cranking corrections based on wrong TPS data
-	engineConfiguration->tps1_1AdcChannel = Cat_IN_TPS1_2;
-	//engineConfiguration->tps_adcChannel = Cat_IN_TPS2_1;
+	engineConfiguration->tps1_1AdcChannel = Cat_IN_TPS2_1;
+	engineConfiguration->tps1_2AdcChannel = Cat_IN_TPS1_2;
 
         engineConfiguration->map.sensor.hwChannel = Cat_IN_MAP;
 	engineConfiguration->clt.adcChannel = Cat_IN_CLT;
@@ -140,7 +140,7 @@ void setBoardDefaultConfiguration(void) {
 	setIgnitionPins();
 	setupDefaultSensorInputs();
       
-	engineConfiguration->fuelPumpPin = Gpio:: Cat_pump_L2;
+	engineConfiguration->fuelPumpPin = Cat_pump_L2;
 		
 	engineConfiguration->enableSoftwareKnock = true;
 	
