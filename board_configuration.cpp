@@ -140,7 +140,7 @@ void setBoardDefaultConfiguration(void) {
 	setIgnitionPins();
 	setupDefaultSensorInputs();
       
-	engineConfiguration->fuelPumpPin = Cat_pump_L2;
+	engineConfiguration->fuelPumpPin = Gpio::B8;
 		
 	engineConfiguration->enableSoftwareKnock = true;
 	
