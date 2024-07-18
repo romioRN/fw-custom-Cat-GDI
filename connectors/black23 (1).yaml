@@ -115,7 +115,7 @@ TCpins:
     type: 12V_N
 
   - pin: 23
-    id: [E13, E13]
+    id: E13
     class: [event_inputs, switch_inputs]
     function: Digital trigger/switch input
     ts_name: Digital 5
