@@ -20,14 +20,14 @@ pins:
     type: gnd
     
   - pin: 4
-    id: [A5, EFI_ADC_5]
+    id: A5
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 10
     function: "Analog Voltage Input #10"
     type: av
     
   - pin: 5
-    id: [A4, EFI_ADC_4]
+    id: A4
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 9
     function: "Analog Voltage Input #9 (PPS)"
@@ -35,14 +35,14 @@ pins:
     color: white
 
   - pin: 6
-    id: [A3, EFI_ADC_3]
+    id: A3
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 8
     function: "Analog Voltage Input #8"
     type: av
 
   - pin: 7
-    id: [A0, EFI_ADC_0]
+    id: A0
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 5
     function: "Analog Voltage Input #5"
@@ -57,7 +57,7 @@ pins:
     type: sensor
 
   - pin: 10
-    id: [C2, EFI_ADC_12]
+    id:  C2
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Volt 3
     function: "Analog Voltage Input #3 TPS2/TPS1_2"
@@ -76,14 +76,14 @@ pins:
    
 
   - pin: 13
-    id: [E14, E14]
+    id: E14
     class: [event_inputs, switch_inputs]
     function: Digital trigger/switch input for instance Start Button
     ts_name: Digital 4
     type: din
 
   - pin: 14
-    id: [E12, E12]
+    id: E12
     class: [event_inputs, switch_inputs]
     function: Digital trigger/switch input for instance VSS
     ts_name: Digital 3
