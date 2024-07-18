@@ -16,9 +16,7 @@ pins:
     color: green
   
   - pin: 3
-    function: Power GND
-    type: gnd
-    
+   
   - pin: 4
     id: [A5, EFI_ADC_5]
     class: [switch_inputs, analog_inputs]
@@ -49,13 +47,10 @@ pins:
     type: av
 
   - pin: 8
-    function: Sensor LSU Bleck
-    type: sensor
-    color: green 
+    
     
   - pin: 9
-    function: Sensor LSU White
-    type: sensor
+   
 
   - pin: 10
     id: [C2, EFI_ADC_12]
