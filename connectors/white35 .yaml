@@ -37,7 +37,7 @@ pins:
   - pin: 6
     id: [A3, EFI_ADC_3]
     class: [switch_inputs, analog_inputs]
-    ts_name: Analog Voltage 8
+    ts_name: Analog Voltage 8(MAP)
     function: "Analog Voltage Input #8"
     type: av
 
@@ -45,7 +45,7 @@ pins:
     id: [A0, EFI_ADC_0]
     class: [switch_inputs, analog_inputs]
     ts_name: Analog Voltage 5 (fuel high pressure)
-    function: "Analog Voltage Input #5"
+    function: "Analog Voltage Input #5 fuel high pressure"
     type: av
 
   - pin: 8
