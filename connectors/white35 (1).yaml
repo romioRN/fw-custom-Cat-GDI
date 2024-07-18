@@ -49,7 +49,7 @@ pins:
     type: av
 
   - pin: 8
-    function: Sensor LSU Black
+    function: Sensor LSU Bleck
     type: sensor
 
   - pin: 9
@@ -121,11 +121,11 @@ pins:
     type: av
 
   - pin: 19
-    function: Sensor LSU_Red
+    function: Sensor LSU Red
     type: sensor
 
   - pin: 20
-    function: Sensor LSU_Green
+    function: Sensor LSU Green
     type: sensor
 
   - pin: 21
@@ -175,11 +175,11 @@ pins:
     type: 5v
 
   - pin: 31
-    function: Sensor LSU_Yellow
+    function: Sensor LSU Yellow
     type: sensor
 
   - pin: 32
-    function: Sensor LSU_Grey
+    function: Sensor LSU Grey
     type: sensor
 
   - pin: 33
@@ -207,8 +207,9 @@ pins:
     
 
 info:
-  title: Proteus
+  title: Cat-GDI
   name: White35
+  directory: Cat-GDI
   cid: white35
   image:
     file: white35.jpg
