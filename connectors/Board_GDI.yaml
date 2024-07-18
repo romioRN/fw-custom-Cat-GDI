@@ -37,9 +37,9 @@ pins:
     
   - pin: 6
     id: B5
-    function: "Injector #9"
+    function: "Pump HW"
     class: outputs
-    ts_name: out_pump1_H
+    ts_name: Pump HW start 5 
     type: ls
 
   - pin: 7
@@ -48,9 +48,9 @@ pins:
 
   - pin: 8
     id: B6
-    function: "Injector #9"
+    function: "Pump HW"
     class: outputs
-    ts_name: out_pump2_H
+    ts_name: Pump HW start 6
     type: ls
 
   - pin: 9
