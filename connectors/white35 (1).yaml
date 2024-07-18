@@ -49,11 +49,11 @@ pins:
     type: av
 
   - pin: 8
-    function: Sensor LSU_Black
+    function: Sensor LSU Black
     type: sensor
 
   - pin: 9
-    function: Sensor LSU_White
+    function: Sensor LSU White
     type: sensor
 
   - pin: 10
