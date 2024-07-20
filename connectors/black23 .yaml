@@ -22,23 +22,23 @@ TCpins:
   - pin: 6
     id: [B1, EFI_ADC_9]
     class: [switch_inputs, analog_inputs]
-    ts_name: Analog Temp 4
+    ts_name: Analog Temp 4(Fuel levl) 
     function: "Analog Thermistor Input #4"
     type: at
     
   - pin: 7
     id: [C1, EFI_ADC_11]
     class: [switch_inputs, analog_inputs]
-    ts_name: Analog Volt 2
-    function: "Analog Voltage Input #2 TPS"
+    ts_name: Analog Volt 2(PPS1)
+    function: "Analog Voltage Input #2 "
     type: av
     color: green
 
   - pin: 8
     id: [C0, EFI_ADC_10]
     class: [switch_inputs, analog_inputs]
-    ts_name: (CLT) Analog Volt 1 
-    function: "Analog Voltage Input #1 MAP"
+    ts_name: Analog Volt 1(PPS2)
+    function: "Analog Voltage Input #1 "
     type: av
     color: yellow
 
