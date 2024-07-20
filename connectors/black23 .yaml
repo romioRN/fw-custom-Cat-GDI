@@ -1,4 +1,4 @@
-TCpins:
+pins:
   - pin: 1
     function: Power 12V_MR
     type: 12V_MR
