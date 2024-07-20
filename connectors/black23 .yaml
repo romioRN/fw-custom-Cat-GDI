@@ -68,12 +68,16 @@ pins:
     type: gnd
 
   - pin: 14
-    function: Power 12V_start
-    type: 12V_start
+    id: G5
+    function: Starter
+    class: outputs
+    ts_name: Starter
+    type: high_logic
+    color: green
 
   - pin: 15
-    function: Power 12V_start
-    type: 12V_start
+    function: Starter
+    type: high_logic
 
   - pin: 16
     id: D15
