@@ -154,8 +154,6 @@ TCpins:
 info:
   title: Cat-GDI
   name: Black23
-  board_url: "https://github.com/romioRN/fw-custom-Cat-GDI/wiki"
-  directory: Cat-GDI
   cid: black23
   image:
     file: black23.jpg
