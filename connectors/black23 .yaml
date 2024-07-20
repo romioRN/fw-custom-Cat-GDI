@@ -122,7 +122,7 @@ pins:
     id: [E13, E13]
     class: [event_inputs, switch_inputs]
     function: Digital trigger/switch input
-    ts_name: Digital 5
+    ts_name: Digital 5(Start button)
     type: din  
 
   - pin: PD8
