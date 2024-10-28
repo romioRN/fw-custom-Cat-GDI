@@ -1,0 +1,14 @@
+### Footprint positions - created on 2024-10-18T08:26:30+0300 ###
+### Printed by KiCad version 8.0.5
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                  Package                                   PosX       PosY       Rot  Side
+BT1       Battery_Cell         BatteryHolder_Keystone_1060_1x2032    160.3500   -88.1000    0.0000  bottom
+C55       56u                  CP_Radial_D8.0mm_P3.50mm              105.9000   -50.3500   90.0000  bottom
+C105      56u                  CP_Radial_D8.0mm_P3.50mm              106.7000   -69.6000  180.0000  bottom
+J4        Conn_01x35           ampseal-35                             85.0000   -86.0000  -90.0000  bottom
+J5        Conn_01x35           ampseal-35-2                          194.0000   -86.0000   90.0000  bottom
+J6        Conn_01x23           ampseal-23                            139.5000   -60.3000    0.0000  bottom
+J7        Conn_02x05_Odd_Even  PinHeader_2x05_P1.27mm_Vertical_SMD   132.4000   -84.6000  180.0000  bottom
+SW2       SW_Push              SW_SPST_EVQQ2                         130.1000   -91.7000  180.0000  bottom
+## End
